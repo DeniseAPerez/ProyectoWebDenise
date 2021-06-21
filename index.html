@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToditoCell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/libs/bignumber.js/bignumber.min.js"></script>
+    <script src="js/libs/numeral.js/numeral.min.js"></script>
+    </head>
+    <body>
+        <header>
+      <h1>ChangerMemory</h1> 
+        </header>
+        <form id="forma" action="javascript:Enviar()">
+        <h3>Bienvenido, por favor ingrese sus datos:</h3>
+      <p><em>El borde azul indica obligatorio.</em></p>
+
+    <p>
+        <label accesskey="N">
+          Nombre
+          <input name="nombre" type="text" autofocus required
+                 pattern=".{1,30}" maxlength="30" size="33"
+                 placeholder="1 a 30 caracteres">
+        </label>   
+      </p>
+      
+      <p>
+        <label accesskey="C">
+          Correo
+          <input name="correo" type="text" autofocus required
+                 pattern=".{1,30}" maxlength="50" value="@" size="33"
+                 placeholder="12 a 50 digitos">
+        </label>   
+         
+      </p>
+      <p>
+        <label accesskey="T">
+          Teléfono
+          <input name="telefono" type="tel" autofocus required
+                 pattern=".{1,30}" maxlength="12" size="33"
+                 placeholder="8 a 12 digitos">
+        </label>   
+         
+      </p>
+      <p>
+        <label accesskey="F">
+          Fecha 
+          <input name="fecha" type="date" autofocus required max="2022-01-24"
+                 min="2021-01-24" >
+        </label>
+        
+      </p>
+
+      <fieldset>
+                <legend>Lista de productos</legend>
+                <div>
+                     <label>
+                         <input type="checkbox" accesskey="C" name="Lista" 
+                                value="cargadores">
+                    <b>Cargadores </b>
+                    </label><br>
+                </div>
+                  <p>
+
+<label for="cargadoresNum">Número de cargadores que desea comprar:</label>
+<input id="cargadoresNum" type="number" name="Lista" value="0">
+  </p>
+                <div>
+                     <label>
+                         <input type="checkbox" accesskey="U" name="Lista"
+                                value="memoriaUSB">
+                    <b>Memorias USB </b>
+                    </label><br>
+                     <p>
+<select name="USB">
+
+      <option>Memoria USB 8GB $90</option>
+
+      <option>Memoria USB 16GB $120</option>
+
+      <option>Memoria USB 32GB $160</option>
+      
+      <option>Memoria USB 64GB $210</option>
+
+    </select>
+<label for="Memoria16">Número de Memorias USB desea comprar:</label>
+<input id="Memoria16" type="number" name="Lista" value="0">
+  </p>
+                </div>
+  
+                <div>
+                     <label>
+                         <input type="checkbox" accesskey="M" name="Lista"
+                                value="memoriaSD">
+                    <b>Memorias miroSD</b>
+                    </label><br>
+                     <p>
+<select name="USB">
+
+      <option>Memoria microSD 8GB $90</option>
+
+      <option>Memoria microSD 16GB $120</option>
+
+      <option>Memoria microSD 32GB $160</option>
+      
+      <option>Memoria microSD 64GB $210</option>
+
+    </select>
+<label for="MemoriaS">Número de Memorias microSD desea comprar:</label>
+<input id="MemoriaS" type="number" name="Lista" value="0">
+  </p>
+                </div>
+                
+  
+                <div>
+                    <br><output id="salidaLista"></output>
+            </fieldset>
+        <p>
+        <input type="submit" value="Enviar" accesskey="P">
+        <input type="reset" value="Limpiar">
+      </p>
+          <label>
+          Salida de informacion:
+          </label>
+    
+      <br><output id="salidaNombre"></output>
+       <br><output id="salidaCorreo"></output>
+       <br><output id="salidaTelefono"></output>
+      <br><output id="salidaFecha"></output>
+      
+      
+      
+        </form>
+
+    <footer>
+      Copyright 2021 Pérez Hernández Denise Adriana
+    </footer>
+        
+      <script src="js/CtrlProveedor.js"> 
+      </script>    
+    </body>
+</html>
