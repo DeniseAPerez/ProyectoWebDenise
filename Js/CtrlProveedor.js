@@ -1,8 +1,5 @@
 "use strict";
 BigNumber.config({DECIMAL_PLACES: 2, ROUNDING_MODE: BigNumber.ROUND_HALF_UP});
-var
-    FMT_MONEDA = "$0,0.00";
-
 
 var forma = document.getElementById("forma"),
     salidaLista = document.getElementById("salidaLista"),
