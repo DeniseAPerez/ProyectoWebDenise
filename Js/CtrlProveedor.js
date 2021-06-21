@@ -1,6 +1,8 @@
 "use strict";
 BigNumber.config({DECIMAL_PLACES: 2, ROUNDING_MODE: BigNumber.ROUND_HALF_UP});
 
+
+
 var forma = document.getElementById("forma"),
     salidaLista = document.getElementById("salidaLista"),
     salidaPrecio = document.getElementById("salidaPrecio"),
@@ -38,8 +40,6 @@ function Enviar() {
 
 }
 
-
-
 //Función de presupuesto
 
 function prespuesto() {
@@ -48,10 +48,10 @@ function prespuesto() {
     let pcargadores = 0;
     var total = [];
 
-    let string = "<h4>Presupuesto:</h4>";
+    let string = "Presupuesto:";
     if (cargadores > 0) {
         pcargadores = (cargadores) * 70;
-        string += "<p>Cargadores :$" + pcargadores + "</p>";
+        string += "Cargadores :$" + pcargadores + "";
     }
     total[0] = parseInt(pcargadores);
 
